@@ -41,7 +41,7 @@ animation: jump 500ms  ease-out;
     width: 500px;
     animation: clouds-animation 20s linear infinite;
 }
-/* Placar */
+
 .score {
     position: fixed;
     top: 20px;
@@ -54,7 +54,7 @@ animation: jump 500ms  ease-out;
     border-radius: 8px;
 }
 
-/* Tela de Game Over */
+
 .game-over-screen {
     position: fixed;
     top: 0;
