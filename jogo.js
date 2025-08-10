@@ -1,17 +1,17 @@
 const mario = document.querySelector('.mario');
 const pipe = document.querySelector('.pipe');
 
-// ----- SISTEMA DE PONTUAÇÃO -----
+
 let score = 0;
 let record = localStorage.getItem('record') || 0;
 
-// Criar o placar
+
 const scoreElement = document.createElement('div');
 scoreElement.classList.add('score');
 scoreElement.textContent = `Pontos: ${score} | Recorde: ${record}`;
 document.body.appendChild(scoreElement);
 
-// ----- TELA DE GAME OVER -----
+
 const gameOverScreen = document.createElement('div');
 gameOverScreen.classList.add('game-over-screen');
 
@@ -30,13 +30,13 @@ gameOverScreen.appendChild(finalScoreText);
 gameOverScreen.appendChild(restartButton);
 document.body.appendChild(gameOverScreen);
 
-// ----- FUNÇÃO DE PULO -----
+
 const jump = () => {
     mario.classList.add('jump');
     setTimeout(() => mario.classList.remove('jump'), 500);
 };
 
-// Controle de pontos
+
 let scored = false;
 
 const loop = setInterval(() => {
